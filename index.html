@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cover">
+        <div class="col-logo">
+            <img src="https://www.calculator.com/root/app_common/img/top_logo_calc.png" alt="">
+        </div>
+        <div class="container">
+            <div class="calculator">
+                <div class="top">
+                    <input id="schreen" class="schreen" type="text" placeholder="0"
+                        onfocus="this.style.backgroundColor = 'rgb(235, 147, 135)'"
+                        onblur="this.style.backgroundColor = 'rgb(235, 147, 135)'">
+                </div>
+                <div>
+                    <button class="clear" onclick="ClearResult()" onshow="schreen.value = '0'"
+                        style="background-color: red;">C</button>
+                    <button class="btn" onclick="DelNumber()" style="background-color: rgb(255, 255, 88);">Del</button>
+                    <button class="btn" onclick="getNmber('/')"
+                        style="background-color: black; color: white;">/</button>
+                </div>
+                <div>
+                    <button class="btn" onclick="getNmber('7')"
+                        style="background-color: black; color: white;">7</button>
+                    <button class="btn" onclick="getNmber('8')"
+                        style="background-color: black; color: white;">8</button>
+                    <button class="btn" onclick="getNmber('9')"
+                        style="background-color: black; color: white;">9</button>
+                    <button class="btn" onclick="getNmber('*')"
+                        style="background-color: black; color: white;">X</button>
+                </div>
+                <div>
+                    <button class="btn" onclick="getNmber('4')"
+                        style="background-color: black; color: white;">4</button>
+                    <button class="btn" onclick="getNmber('5')"
+                        style="background-color: black; color: white;">5</button>
+                    <button class="btn" onclick="getNmber('6')"
+                        style="background-color: black; color: white;">6</button>
+                    <button class="btn" onclick="getNmber('-')"
+                        style="background-color: black; color: white;">-</button>
+                </div>
+                <div>
+                    <button class="btn" onclick="getNmber('1')"
+                        style="background-color: black; color: white;">1</button>
+                    <button class="btn" onclick="getNmber('2')"
+                        style="background-color: black; color: white;">2</button>
+                    <button class="btn" onclick="getNmber('3')"
+                        style="background-color: black; color: white;">3</button>
+                    <button class="btn" onclick="getNmber('+')"
+                        style="background-color: black; color: white;">+</button>
+                </div>
+                <div>
+                    <button class="btn" onclick="getNmber('0')"
+                        style="background-color: black; color: white;">0</button>
+                    <button class="btn" onclick="getNmber('.')"
+                        style="background-color: black; color: white;">.</button>
+                    <button class="clear" onclick="getResult()"
+                        style="background-color: black; color: white;">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
